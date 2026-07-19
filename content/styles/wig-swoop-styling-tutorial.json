@@ -1,0 +1,79 @@
+{
+  "author": "Jasmine Carter",
+  "datePublished": "2026-07-19",
+  "reviews": [],
+  "reviewCount": 0,
+  "avgRating": null,
+  "images": {
+    "heroAlt": "Wig styled with a deep side-part swoop bang across the forehead",
+    "textureAlt": "Close-up of the swooped section blending into a deep side part on a wig",
+    "pinAlt": "Wig swoop hairstyle, front view with off-center parting"
+  },
+  "slug": "wig-swoop-styling-tutorial",
+  "title": "Wig Swoop Styling Tutorial",
+  "hubPath": "wig",
+  "hubLabel": "Wig",
+  "metaDescription": "How to style a swoop bang on a wig without a lace frontal — a side-part, heat-styling technique that works on regular wefted wigs.",
+  "targetKeywords": [
+    "swoop wig hairstyles",
+    "wig swoop styling"
+  ],
+  "difficulty": "Medium",
+  "timeToStyle": "PT25M",
+  "hairType": [
+    "straight",
+    "wavy"
+  ],
+  "hairLength": "medium-to-long",
+  "toolsNeeded": [
+    "Wide-tooth comb",
+    "Flat iron or curling wand",
+    "Wig stand or mannequin head (optional)"
+  ],
+  "productsNeeded": [
+    "Heat protectant safe for the wig fiber (if synthetic)",
+    "Light-hold gel",
+    "Wig-safe hairspray"
+  ],
+  "steps": [
+    {
+      "name": "Confirm the fiber type",
+      "text": "Check whether the wig is human hair or synthetic before applying any heat — synthetic fibers need a much lower, wig-safe heat setting or none at all, since regular flat iron temperatures can melt them."
+    },
+    {
+      "name": "Create a deep side part",
+      "text": "Comb the wig into a deep side part, well off-center, which is what gives enough length and coverage on one side to create the swoop."
+    },
+    {
+      "name": "Direct the heavier side forward",
+      "text": "Take the larger side section and, using a flat iron or wand, direct it forward and down at an angle across the forehead rather than straight down."
+    },
+    {
+      "name": "Blend the edge",
+      "text": "Comb the swooped section lightly to blend it into the rest of the style, softening the line where it meets the shorter side."
+    },
+    {
+      "name": "Set and secure",
+      "text": "Mist with a wig-safe hairspray to hold the shape, and if the wig is on a stand, pin the swoop lightly overnight to help it hold its direction."
+    }
+  ],
+  "tips": [
+    {
+      "question": "Can heat tools be used on any wig?",
+      "answer": "Only human hair or heat-resistant synthetic wigs — regular synthetic fiber will melt or frizz irreversibly under standard flat iron heat, so checking the wig's material first is essential before this style."
+    },
+    {
+      "question": "Why use a swoop instead of a frontal for this look?",
+      "answer": "A swoop bang gives a similar face-framing, natural-parting effect to a frontal but works on a standard wefted wig without needing lace, glue, or plucking — a much faster, lower-commitment option."
+    },
+    {
+      "question": "How is the swoop kept in place through the day?",
+      "answer": "A wig-safe hairspray applied specifically along the swoop's edge, plus avoiding wind or repeated touching, keeps the direction set — re-directing it with a flat iron touch-up works if it does fall out of place."
+    }
+  ],
+  "storyIntro": [
+    "A swoop bang is the go-to styling trick for wigs without a lace frontal — it gives a similar natural, off-center parting effect without needing any of the gluing, plucking or melting a frontal install requires.",
+    "The technique itself is simple heat styling, but checking the wig's fiber type first is the step that prevents a genuinely common and often irreversible mistake — melting a synthetic wig with the wrong heat setting."
+  ],
+  "storyNote": "Test a small hidden section with the flat iron first if there's any doubt about the wig's fiber — a quick test avoids ruining the whole wig on a section that can't be undone once synthetic fiber melts."
+}

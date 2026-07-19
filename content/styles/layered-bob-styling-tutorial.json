@@ -1,0 +1,79 @@
+{
+  "author": "Jasmine Carter",
+  "datePublished": "2026-07-19",
+  "reviews": [],
+  "reviewCount": 0,
+  "avgRating": null,
+  "images": {
+    "heroAlt": "Layered bob haircut styled with volume at the roots and soft ends",
+    "textureAlt": "Close-up of round-brush blowout technique on bob-length hair",
+    "pinAlt": "Layered bob hairstyle, side angle showing face-framing layers"
+  },
+  "slug": "layered-bob-styling-tutorial",
+  "title": "Layered Bob Styling Tutorial",
+  "hubPath": "short-hair",
+  "hubLabel": "Short Hair",
+  "metaDescription": "How to style a layered bob at home for movement instead of a flat helmet shape — a round-brush blowout method that works on fine and medium hair.",
+  "targetKeywords": [
+    "layered bob hairstyles",
+    "layered bob styling"
+  ],
+  "difficulty": "Medium",
+  "timeToStyle": "PT25M",
+  "hairType": [
+    "straight",
+    "wavy"
+  ],
+  "hairLength": "short",
+  "toolsNeeded": [
+    "Round brush",
+    "Blow dryer with nozzle",
+    "Sectioning clips",
+    "Flat iron or curling wand (optional)"
+  ],
+  "productsNeeded": [
+    "Heat protectant spray",
+    "Lightweight volumizing mousse"
+  ],
+  "steps": [
+    {
+      "name": "Prep towel-dried hair",
+      "text": "Apply heat protectant and a small amount of mousse to damp, towel-dried hair, focusing product at the roots for lift."
+    },
+    {
+      "name": "Section top from bottom",
+      "text": "Clip the top half of the hair up and start blow-drying the bottom section first, working in small pieces."
+    },
+    {
+      "name": "Round-brush each section",
+      "text": "Wrap small sections around the round brush and follow with the dryer nozzle pointed down the hair shaft, rolling the brush under at the ends for a slight inward curve."
+    },
+    {
+      "name": "Work through the top layers",
+      "text": "Release the top section and repeat, angling the brush to lift the roots away from the scalp as you dry for volume at the crown."
+    },
+    {
+      "name": "Set the layers",
+      "text": "Once fully dry, run a flat iron or curling wand lightly over the ends for extra shape, then finish with a light-hold spray."
+    }
+  ],
+  "tips": [
+    {
+      "question": "Why does a layered bob go flat by midday?",
+      "answer": "Skipping the root lift step during blow-drying is the most common cause — a bob with no volume built in at the crown falls flat as soon as the initial style relaxes, regardless of how the ends are curled."
+    },
+    {
+      "question": "What round brush size works best for a bob length?",
+      "answer": "A medium barrel, roughly 1.5 inches, gives enough curve to shape the ends without being too large to maneuver through shorter layers."
+    },
+    {
+      "question": "Can a layered bob be air-dried instead?",
+      "answer": "Yes, with a light mousse scrunched in and the ends tucked under with fingers while damp — it won't have as much volume at the root, but it holds shape reasonably well on wavy textures."
+    }
+  ],
+  "storyIntro": [
+    "A layered bob is one of the most requested cuts precisely because it looks effortless in photos — but that soft, face-framing movement almost always comes from how it's styled, not just how it's cut.",
+    "The round-brush blowout technique is what builds the volume at the root and the slight inward curve at the ends that separates a \"styled\" bob from one that's just air-dried flat."
+  ],
+  "storyNote": "Dry each section completely before moving to the next one — going back over a partially dry section with the round brush is what causes frizz and undoes the smoothness from the first pass."
+}

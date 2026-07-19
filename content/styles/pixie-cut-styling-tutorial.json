@@ -1,0 +1,77 @@
+{
+  "author": "Jasmine Carter",
+  "datePublished": "2026-07-19",
+  "reviews": [],
+  "reviewCount": 0,
+  "avgRating": null,
+  "images": {
+    "heroAlt": "Textured pixie cut hairstyle with lifted roots and defined top pieces",
+    "textureAlt": "Close-up of textured paste worked through the top section of a pixie cut",
+    "pinAlt": "Pixie cut hairstyle, front-facing view with soft side definition"
+  },
+  "slug": "pixie-cut-styling-tutorial",
+  "title": "Pixie Cut Styling Tutorial",
+  "hubPath": "short-hair",
+  "hubLabel": "Short Hair",
+  "metaDescription": "How to style a pixie cut day to day, from the initial grow-out awkward stage to a finished textured look — the products and technique that keep it from looking flat.",
+  "targetKeywords": [
+    "pixie hairstyles",
+    "pixie cut styling"
+  ],
+  "difficulty": "Easy",
+  "timeToStyle": "PT10M",
+  "hairType": [
+    "straight",
+    "wavy"
+  ],
+  "hairLength": "short",
+  "toolsNeeded": [
+    "Fingers or a small paddle brush",
+    "Blow dryer (optional)"
+  ],
+  "productsNeeded": [
+    "Texturizing paste or clay",
+    "Light-hold hairspray"
+  ],
+  "steps": [
+    {
+      "name": "Apply product to damp hair",
+      "text": "Rub a pea-sized amount of texturizing paste between the palms and work it through damp hair from root to tip, focusing on the top and fringe area."
+    },
+    {
+      "name": "Dry with lift",
+      "text": "Blow-dry using fingers to lift the roots upward and forward rather than flattening them with a brush, which is what gives a pixie its shape."
+    },
+    {
+      "name": "Piece out the top",
+      "text": "Once dry, use fingertips with a small amount of extra paste to pull individual pieces of the top section into place for texture."
+    },
+    {
+      "name": "Define the sides",
+      "text": "Smooth the shorter sides and back down with a small comb or the palm of the hand for contrast against the textured top."
+    },
+    {
+      "name": "Set lightly",
+      "text": "Mist with a light-hold spray only over the top texture, keeping the sides untouched so they stay soft rather than stiff."
+    }
+  ],
+  "tips": [
+    {
+      "question": "Why does a pixie cut go flat within a couple of hours?",
+      "answer": "Skipping the finger-drying-with-lift step is usually the reason — pixies rely almost entirely on how the roots are dried, since there's very little length or weight to build shape from otherwise."
+    },
+    {
+      "question": "How much product is actually needed for a pixie?",
+      "answer": "Far less than most people use — a pea-sized amount of paste is enough for most pixie lengths, and too much product weighs the short top section down instead of adding texture."
+    },
+    {
+      "question": "What's the best way to manage a pixie during grow-out?",
+      "answer": "Regular trims every 4-6 weeks on just the neckline and sides keep the shape clean while the top grows longer, which is usually the part people want to grow out first."
+    }
+  ],
+  "storyIntro": [
+    "A pixie cut lives or dies on the styling, not the cut itself — the same haircut can look sharp and intentional or completely flat depending entirely on how the roots are dried.",
+    "The finger-drying technique that lifts hair up and away from the scalp while it dries is what most pixie tutorials skip, and it's the single biggest difference between a styled pixie and a limp one."
+  ],
+  "storyNote": "Work product through hair while it's still damp, not after it's already dry — paste applied to dry pixie hair tends to sit on top in clumps rather than distributing evenly through the shorter strands."
+}

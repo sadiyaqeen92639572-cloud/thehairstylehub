@@ -1,0 +1,79 @@
+{
+  "author": "Jasmine Carter",
+  "datePublished": "2026-07-19",
+  "reviews": [],
+  "reviewCount": 0,
+  "avgRating": null,
+  "images": {
+    "heroAlt": "Straight-back cornrow braids on natural hair, close to the scalp",
+    "textureAlt": "Close-up of an underhand cornrow crossover mid-braid",
+    "pinAlt": "Finished cornrow braids hairstyle, back view showing clean straight rows"
+  },
+  "slug": "cornrow-braids-tutorial",
+  "title": "Cornrow Braids Tutorial",
+  "hubPath": "braids",
+  "hubLabel": "Braids",
+  "metaDescription": "How to cornrow hair straight back, beginner-friendly — the flat, close-to-scalp braid technique that works on natural, relaxed and straightened hair alike.",
+  "targetKeywords": [
+    "cornrow hairstyles",
+    "cornrow braids"
+  ],
+  "difficulty": "Medium",
+  "timeToStyle": "PT1H30M",
+  "hairType": [
+    "coily",
+    "wavy",
+    "straight"
+  ],
+  "hairLength": "medium-to-long",
+  "toolsNeeded": [
+    "Rat-tail comb",
+    "Hair clips",
+    "Bobby pins"
+  ],
+  "productsNeeded": [
+    "Edge control or gel",
+    "Light holding spray"
+  ],
+  "steps": [
+    {
+      "name": "Detangle and part",
+      "text": "Detangle the hair fully, then part off a straight row from the hairline to the nape using the rat-tail comb — a straight, even part is what keeps the finished row looking clean."
+    },
+    {
+      "name": "Start the underhand braid",
+      "text": "Take a small section at the front of the part and split it into three strands. Cross the outer strands underneath the middle strand (not over) — this is the underhand technique that makes the braid sit flat."
+    },
+    {
+      "name": "Feed in hair as you go",
+      "text": "With each crossover, pick up a small new section of hair from along the part and add it into the strand before crossing, keeping tension even so the row stays flat against the scalp."
+    },
+    {
+      "name": "Braid to the end",
+      "text": "Once you reach the nape and there's no more hair to feed in, continue a regular three-strand braid to the ends and secure with a small elastic."
+    },
+    {
+      "name": "Repeat and finish edges",
+      "text": "Repeat for each row, then smooth the front hairline with a small amount of edge control and a soft-bristle brush."
+    }
+  ],
+  "tips": [
+    {
+      "question": "What makes a cornrow lie flat instead of standing up?",
+      "answer": "Crossing the strands underneath rather than over — that \"underhand\" motion is the entire difference between a flat cornrow and a raised braid, and it takes practice to get consistent on your own head."
+    },
+    {
+      "question": "Is it possible to cornrow straight, non-textured hair?",
+      "answer": "Yes, though straight hair has less natural grip, so a small amount of gel or mousse at the root of each row helps the braid hold its shape through the day."
+    },
+    {
+      "question": "How do I keep the parts straight without a mirror behind my head?",
+      "answer": "A handheld mirror angled against a wall mirror lets you see the back of your part while braiding — doing the first one or two rows slowly and checking often is faster in the long run than redoing a crooked row."
+    }
+  ],
+  "storyIntro": [
+    "Cornrows are the foundation technique behind most protective styles — Fulani braids, feed-in ponytails and braided updos all start from the same flat, underhand cornrow.",
+    "Learning the basic straight-back row first, before attempting a curved or geometric part, is the fastest way to build the muscle memory for tension and feed-in speed that every other cornrow style builds on."
+  ],
+  "storyNote": "Even tension matters more than speed for a first attempt — a slightly loose cornrow can be fixed by redoing one row, but pulling too tight across the whole head can cause real scalp irritation."
+}

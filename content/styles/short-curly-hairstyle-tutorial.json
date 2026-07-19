@@ -1,0 +1,78 @@
+{
+  "author": "Jasmine Carter",
+  "datePublished": "2026-07-19",
+  "reviews": [],
+  "reviewCount": 0,
+  "avgRating": null,
+  "images": {
+    "heroAlt": "Short curly hairstyle with defined bouncy curls above the shoulder",
+    "textureAlt": "Close-up of individually defined short curls after scrunching out the gel cast",
+    "pinAlt": "Short curly hairstyle, three-quarter angle showing curl clumping"
+  },
+  "slug": "short-curly-hairstyle-tutorial",
+  "title": "Short Curly Hairstyle Tutorial",
+  "hubPath": "curly-hair",
+  "hubLabel": "Curly Hair",
+  "metaDescription": "How to style short curly hair for definition without frizz — a wash-day routine built for curls that sit above the shoulder, where product weight matters most.",
+  "targetKeywords": [
+    "short curly hairstyles",
+    "short curly hair styling"
+  ],
+  "difficulty": "Easy",
+  "timeToStyle": "PT20M",
+  "hairType": [
+    "curly",
+    "wavy"
+  ],
+  "hairLength": "short",
+  "toolsNeeded": [
+    "Wide-tooth comb",
+    "Microfiber towel or old t-shirt",
+    "Diffuser attachment (optional)"
+  ],
+  "productsNeeded": [
+    "Lightweight leave-in conditioner",
+    "Curl cream or gel"
+  ],
+  "steps": [
+    {
+      "name": "Detangle in the shower",
+      "text": "Apply conditioner and detangle with a wide-tooth comb while the hair is soaked and slippery — detangling dry short curls causes far more breakage and frizz."
+    },
+    {
+      "name": "Scrunch out water",
+      "text": "Flip the hair forward and scrunch with a microfiber towel or cotton t-shirt to remove excess water without roughing up the cuticle the way a regular towel does."
+    },
+    {
+      "name": "Apply product to soaking-wet hair",
+      "text": "Rake a small amount of leave-in conditioner through, then scrunch in a curl cream or gel while the hair is still dripping — product applied to already-drying hair sits on top instead of coating each strand."
+    },
+    {
+      "name": "Dry without disturbing the curls",
+      "text": "Air dry, or diffuse on low heat with the diffuser cupped close to the scalp, lifting sections gently rather than moving the dryer back and forth."
+    },
+    {
+      "name": "Break the cast gently",
+      "text": "Once fully dry, scrunch out the crunchy gel cast with clean, dry hands to release soft, separated curls."
+    }
+  ],
+  "tips": [
+    {
+      "question": "Why do short curls frizz more than long curls?",
+      "answer": "Shorter curls have less weight pulling them down, so any excess frizz or halo effect is more visible — the fix is less about more product and more about applying it evenly to soaking-wet hair."
+    },
+    {
+      "question": "Is a diffuser worth it for short curly hair?",
+      "answer": "It speeds up drying time significantly and helps curls clump instead of frizzing loose, though air-drying gives the softest result if time allows."
+    },
+    {
+      "question": "How often should short curly hair actually be washed?",
+      "answer": "Every 2-4 days is typical for most curl patterns — over-washing strips the natural oils curls rely on for definition, while refreshing with water between washes keeps curls looking fresh."
+    }
+  ],
+  "storyIntro": [
+    "Short curly hair behaves differently from long curly hair — with less weight to pull the curl down, the same amount of product that looks perfect on longer hair can leave short curls looking heavy or crunchy instead of soft.",
+    "The technique that actually works for shorter lengths leans on applying product to soaking-wet hair and letting gravity and drying time do the rest, rather than trying to compensate with more gel."
+  ],
+  "storyNote": "Resist the urge to touch the hair while it dries — every time fingers move through a curl before it sets fully, that curl loses definition and picks up frizz."
+}
