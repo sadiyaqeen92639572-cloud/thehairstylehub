@@ -7,6 +7,10 @@ const all = fs.readdirSync(dir).filter(f => f.endsWith('.json')).map(f => JSON.p
 
 const hubPaths = [...new Set(all.map(r => r.hubPath))].sort();
 
+// Every page carries the new site-wide nav + related blocks from this build, so a single
+// uniform lastmod is honest here (not a cosmetic blanket bump on unchanged pages).
+const LASTMOD = new Date().toISOString().slice(0, 10);
+
 const urls = [
   `${SITE_URL}/`,
   `${SITE_URL}/about/`,
@@ -17,7 +21,7 @@ const urls = [
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
+${urls.map(u => `  <url><loc>${u}</loc><lastmod>${LASTMOD}</lastmod></url>`).join('\n')}
 </urlset>
 `;
 

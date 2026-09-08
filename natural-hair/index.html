@@ -21,9 +21,15 @@
   .card h3{font-family:Inter,sans-serif;font-size:1rem;margin:0 0 0.3rem;}
   .card .meta{font-size:0.78rem;color:var(--muted);font-family:Inter,sans-serif;}
   .card .summary{font-size:0.85rem;color:var(--muted);margin:0.4rem 0 0;line-height:1.5;}
+
+  .hubnav{font-family:Inter,sans-serif;font-size:.8rem;max-width:960px;margin:0 auto;padding:.65rem 1.5rem;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;gap:.35rem .9rem;line-height:1.5;}
+  .hubnav a{color:var(--muted);text-decoration:none;}
+  .hubnav a:hover{color:var(--accent);}
+  .hubnav .home{font-weight:600;color:var(--text);}
 </style>
 </head>
 <body>
+<nav class="hubnav" aria-label="All hairstyle categories"><a class="home" href="/">The Hairstyle Hub</a><a href="/braids/">Braids</a><a href="/curly-hair/">Curly Hair</a><a href="/short-hair/">Short Hair</a><a href="/natural-hair/">Natural Hair</a><a href="/long-hair/">Long Hair</a><a href="/medium-hair/">Medium Hair</a><a href="/school/">School</a><a href="/kids-hair/">Kids Hair</a><a href="/mens-hair/">Men's Hair</a><a href="/updos/">Updos</a><a href="/ponytails/">Ponytails</a><a href="/wedding-hair/">Wedding Hair</a><a href="/wig/">Wig</a></nav>
 <div class="wrap">
   <p class="meta" style="font-family:Inter,sans-serif"><a href="/">The Hairstyle Hub</a> &rsaquo; Natural Hair</p>
   <h1>Natural Hair Tutorials</h1>
@@ -56,6 +62,33 @@
     </a>
   </div>
 
+  <h2 style="font-family:Inter,sans-serif;font-size:1.3rem;margin-top:2.5rem;">More Popular Tutorials</h2>
+  <div class="grid">
+    <a class="card" href="/braids/cornrow-braids-tutorial/">
+      <img src="/images/cornrow-braids-tutorial/hero.jpg" alt="Straight-back cornrow braids on natural hair, close to the scalp" loading="lazy">
+      <div class="card-body">
+        <h3>Cornrow Braids Tutorial</h3>
+        <span class="meta">1 hr 30 min · Medium</span>
+        <p class="summary">How to cornrow hair straight back, beginner-friendly</p>
+      </div>
+    </a>
+    <a class="card" href="/braids/fulani-braids-tutorial/">
+      <img src="/images/fulani-braids-tutorial/hero.jpg" alt="Fulani braids with cornrowed center part and hanging box braids on coily natural hair" loading="lazy">
+      <div class="card-body">
+        <h3>Fulani Braids Tutorial</h3>
+        <span class="meta">3 hr 30 min · Hard</span>
+        <p class="summary">How to do Fulani braids step by step</p>
+      </div>
+    </a>
+    <a class="card" href="/kids-hair/kids-cornrow-hairstyle-tutorial/">
+      <img src="/images/kids-cornrow-hairstyle-tutorial/hero.jpg" alt="Simple wide cornrow hairstyle on a child, styled with beads at the ends" loading="lazy">
+      <div class="card-body">
+        <h3>Kids Cornrow Hairstyle Tutorial</h3>
+        <span class="meta">1 hr · Medium</span>
+        <p class="summary">How to cornrow a kid's hair without the tears</p>
+      </div>
+    </a>
+  </div>
 </div>
 <footer style="max-width:960px;margin:0 auto;padding:24px 1.5rem;text-align:center;">
   <p style="font-size:.72rem;color:#7a6a72;">The Hairstyle Hub is part of Gesmine-Invest Limited, registered UK company number 14120136, registered office address at Hardy House, 269 Poynders Gardens, London, London, United Kingdom, SW4 8PQ.</p>

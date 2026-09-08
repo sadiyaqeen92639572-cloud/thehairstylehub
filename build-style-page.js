@@ -1,12 +1,47 @@
 const fs = require('fs');
 const path = require('path');
+const { HUB_NAV, HUB_NAV_CSS } = require('./build-common');
 
 const SITE_URL = 'https://thehairstylehub.com';
 const SITE_NAME = 'The Hairstyle Hub';
 
+const STYLES_DIR = path.join(__dirname, 'content', 'styles');
+
+// Composite identity: hubPath + '/' + slug. Slugs are unique today but nothing enforces it,
+// and the related() modular walk must not desync if two hubs ever share a slug.
+const styleKey = s => `${s.hubPath}/${s.slug}`;
+
+// Load every style once, sorted stably on the composite key so the related() walk is deterministic.
+const ALL = fs.readdirSync(STYLES_DIR)
+  .filter(f => f.endsWith('.json'))
+  .map(f => JSON.parse(fs.readFileSync(path.join(STYLES_DIR, f), 'utf8')))
+  .sort((a, b) => styleKey(a) < styleKey(b) ? -1 : styleKey(a) > styleKey(b) ? 1 : 0);
+
 function loadStyle(slug) {
-  const file = path.join(__dirname, 'content', 'styles', `${slug}.json`);
+  const file = path.join(STYLES_DIR, `${slug}.json`);
   return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+// Up to 6 internal links per article: every same-hub sibling, then cross-hub styles picked by a
+// modular walk over the global order. The walk guarantees the link graph is strongly connected —
+// following cross-hub links from any article eventually reaches every other article.
+function related(r) {
+  const rk = styleKey(r);
+  const i = ALL.findIndex(s => styleKey(s) === rk);
+  if (i === -1) throw new Error(`style not found in ALL: ${rk}`);
+  const siblings = ALL.filter(s => s.hubPath === r.hubPath && styleKey(s) !== rk);
+  const cross = [];
+  for (let k = 1; cross.length < 4 && k < ALL.length; k++) {
+    const c = ALL[(i + k) % ALL.length];
+    if (c.hubPath !== r.hubPath) cross.push(c);
+  }
+  return [...siblings, ...cross].slice(0, 6);
+}
+
+function buildRelatedHtml(r) {
+  return related(r).map(s =>
+    `      <li><a href="/${s.hubPath}/${s.slug}/">${s.title}</a> <span class="rel-hub">${s.hubLabel}</span></li>`
+  ).join('\n');
 }
 
 function formatDuration(iso) {
@@ -144,9 +179,16 @@ const TEMPLATE = (r, jsonLd) => `<!DOCTYPE html>
   .faq-question{font-family:Inter,sans-serif;font-size:1.05rem;}
   .pin-cta{display:flex;align-items:center;gap:0.8rem;background:#fbe8ee;border-radius:10px;padding:0.8rem;margin:1.5rem 0;}
   .pin-cta img{width:60px;height:80px;object-fit:cover;border-radius:6px;}
-</style>
+  .related{margin:2.5rem 0 1rem;}
+  .related h2{font-family:Inter,sans-serif;font-size:1.3rem;}
+  .related ul{list-style:none;padding:0;margin:0;}
+  .related li{padding:0.5rem 0;border-bottom:1px solid var(--border);}
+  .related a{color:var(--accent);text-decoration:none;font-family:Inter,sans-serif;}
+  .related .rel-hub{color:var(--muted);font-size:0.78rem;font-family:Inter,sans-serif;margin-left:0.4rem;}
+${HUB_NAV_CSS}</style>
 </head>
 <body>
+${HUB_NAV}
 <div class="wrap">
   <p class="meta"><a href="/">${SITE_NAME}</a> &rsaquo; <a href="/${r.hubPath}/">${r.hubLabel}</a> &rsaquo; ${r.title}</p>
 
@@ -194,6 +236,13 @@ const TEMPLATE = (r, jsonLd) => `<!DOCTYPE html>
   <section class="faq-section">
     <h2>Tips &amp; Common Questions</h2>
     ${buildFaqHtml(r)}
+  </section>
+
+  <section class="related">
+    <h2>More Tutorials</h2>
+    <ul>
+${buildRelatedHtml(r)}
+    </ul>
   </section>
 </div>
 <footer style="max-width:720px;margin:0 auto;padding:24px 16px;text-align:center;">

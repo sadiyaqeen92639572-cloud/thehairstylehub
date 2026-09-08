@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { HUB_NAV, HUB_NAV_CSS } = require('./build-common');
 
 const SITE_URL = 'https://thehairstylehub.com';
 const SITE_NAME = 'The Hairstyle Hub';
@@ -7,20 +8,22 @@ const SITE_NAME = 'The Hairstyle Hub';
 const dir = path.join(__dirname, 'content', 'styles');
 const all = fs.readdirSync(dir).filter(f => f.endsWith('.json')).map(f => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
 
+// crossLink: 3 cross-hub tutorial slugs surfaced as "More Popular Tutorials" on each hub page.
+// All slugs are cross-hub (never the hub's own styles) so every hub feeds crawl equity into others.
 const HUBS = [
   { path: 'braids', label: 'Braids', title: 'Braid Hairstyle Tutorials', intro: 'From Fulani to knotless box braids — step-by-step braiding tutorials for natural, coily and textured hair.', crossLink: ['natural-hair-twist-out-tutorial', 'kids-cornrow-hairstyle-tutorial', 'mens-cornrow-braids-tutorial'] },
-  { path: 'curly-hair', label: 'Curly Hair', title: 'Curly Hair Styling Tutorials', intro: 'Wash-day routines and styling techniques built for curly and wavy texture, from short curls to curly updos.' },
-  { path: 'short-hair', label: 'Short Hair', title: 'Short Hair Styling Tutorials', intro: 'Bobs, pixies and shags — the styling technique behind every short haircut that actually holds shape.' },
-  { path: 'natural-hair', label: 'Natural Hair', title: 'Natural Hair Tutorials', intro: 'Twist-outs, Bantu knots and protective styling for 4A-4C natural hair textures.' },
-  { path: 'long-hair', label: 'Long Hair', title: 'Long Hair Styling Tutorials', intro: 'Waves, updos and everyday styles for long and lob-length hair.' },
-  { path: 'school', label: 'School', title: 'School Hairstyle Tutorials', intro: 'Fast, sturdy hairstyles for school mornings and sports — braided styles that hold through recess and practice.' },
-  { path: 'kids-hair', label: 'Kids Hair', title: 'Kids Hairstyle Tutorials', intro: 'Gentle, low-tension hairstyles for toddlers and kids, built around shorter sitting times and sensitive scalps.' },
-  { path: 'mens-hair', label: "Men's Hair", title: "Men's Hairstyle Tutorials", intro: "Styling tutorials for men's cuts and textures, from a middle part to cornrows." },
-  { path: 'updos', label: 'Updos', title: 'Updo Hairstyle Tutorials', intro: 'Buns and updos, from a sleek slicked-back bun to a deliberately undone messy updo.' },
-  { path: 'ponytails', label: 'Ponytails', title: 'Ponytail Hairstyle Tutorials', intro: 'High, low and sleek ponytail techniques that actually hold their shape all day.' },
-  { path: 'wedding-hair', label: 'Wedding Hair', title: 'Wedding Hairstyle Tutorials', intro: 'Bridal hairstyles built to last through the ceremony, photos and a full reception of dancing.' },
-  { path: 'medium-hair', label: 'Medium Hair', title: 'Medium-Length Hairstyle Tutorials', intro: 'Styling techniques built specifically for medium-length hair, not adapted from long-hair tutorials.' },
-  { path: 'wig', label: 'Wig', title: 'Wig Styling Tutorials', intro: 'Frontal installs and everyday wig styling, from a natural hairline melt to a simple swoop bang.' }
+  { path: 'curly-hair', label: 'Curly Hair', title: 'Curly Hair Styling Tutorials', intro: 'Wash-day routines and styling techniques built for curly and wavy texture, from short curls to curly updos.', crossLink: ['natural-hair-twist-out-tutorial', 'bantu-knots-tutorial', 'messy-updo-bun-tutorial'] },
+  { path: 'short-hair', label: 'Short Hair', title: 'Short Hair Styling Tutorials', intro: 'Bobs, pixies and shags — the styling technique behind every short haircut that actually holds shape.', crossLink: ['long-bob-lob-styling-tutorial', 'short-curly-hairstyle-tutorial', 'middle-part-haircut-styling-tutorial'] },
+  { path: 'natural-hair', label: 'Natural Hair', title: 'Natural Hair Tutorials', intro: 'Twist-outs, Bantu knots and protective styling for 4A-4C natural hair textures.', crossLink: ['cornrow-braids-tutorial', 'fulani-braids-tutorial', 'kids-cornrow-hairstyle-tutorial'] },
+  { path: 'long-hair', label: 'Long Hair', title: 'Long Hair Styling Tutorials', intro: 'Waves, updos and everyday styles for long and lob-length hair.', crossLink: ['half-up-half-down-wedding-hairstyle-tutorial', 'sleek-low-ponytail-tutorial', 'messy-updo-bun-tutorial'] },
+  { path: 'school', label: 'School', title: 'School Hairstyle Tutorials', intro: 'Fast, sturdy hairstyles for school mornings and sports — braided styles that hold through recess and practice.', crossLink: ['kids-cornrow-hairstyle-tutorial', 'high-ponytail-tutorial', 'cornrow-braids-tutorial'] },
+  { path: 'kids-hair', label: 'Kids Hair', title: 'Kids Hairstyle Tutorials', intro: 'Gentle, low-tension hairstyles for toddlers and kids, built around shorter sitting times and sensitive scalps.', crossLink: ['first-day-of-school-braided-hairstyle-tutorial', 'volleyball-hairstyle-tutorial', 'rubber-band-ponytail-natural-hair-tutorial'] },
+  { path: 'mens-hair', label: "Men's Hair", title: "Men's Hairstyle Tutorials", intro: "Styling tutorials for men's cuts and textures, from a middle part to cornrows.", crossLink: ['cornrow-braids-tutorial', 'pixie-cut-styling-tutorial', 'short-shag-haircut-tutorial'] },
+  { path: 'updos', label: 'Updos', title: 'Updo Hairstyle Tutorials', intro: 'Buns and updos, from a sleek slicked-back bun to a deliberately undone messy updo.', crossLink: ['bridal-bun-tutorial', 'curly-bun-updo-tutorial', 'claw-clip-updo-long-hair-tutorial'] },
+  { path: 'ponytails', label: 'Ponytails', title: 'Ponytail Hairstyle Tutorials', intro: 'High, low and sleek ponytail techniques that actually hold their shape all day.', crossLink: ['volleyball-hairstyle-tutorial', 'rubber-band-ponytail-natural-hair-tutorial', 'claw-clip-updo-long-hair-tutorial'] },
+  { path: 'wedding-hair', label: 'Wedding Hair', title: 'Wedding Hairstyle Tutorials', intro: 'Bridal hairstyles built to last through the ceremony, photos and a full reception of dancing.', crossLink: ['slicked-back-bun-tutorial', 'claw-clip-updo-long-hair-tutorial', 'messy-updo-bun-tutorial'] },
+  { path: 'medium-hair', label: 'Medium Hair', title: 'Medium-Length Hairstyle Tutorials', intro: 'Styling techniques built specifically for medium-length hair, not adapted from long-hair tutorials.', crossLink: ['layered-bob-styling-tutorial', 'high-ponytail-tutorial', 'half-up-half-down-wedding-hairstyle-tutorial'] },
+  { path: 'wig', label: 'Wig', title: 'Wig Styling Tutorials', intro: 'Frontal installs and everyday wig styling, from a natural hairline melt to a simple swoop bang.', crossLink: ['sleek-low-ponytail-tutorial', 'high-ponytail-tutorial', 'short-curly-hairstyle-tutorial'] }
 ];
 
 function formatDuration(iso) {
@@ -79,9 +82,10 @@ ${crossStyles.map(cardHtml).join('\n')}
 <title>${hub.title} | ${SITE_NAME}</title>
 <meta name="description" content="${hub.intro}">
 <link rel="canonical" href="${SITE_URL}/${hub.path}/">
-<style>${HUB_STYLE}</style>
+<style>${HUB_STYLE}${HUB_NAV_CSS}</style>
 </head>
 <body>
+${HUB_NAV}
 <div class="wrap">
   <p class="meta" style="font-family:Inter,sans-serif"><a href="/">${SITE_NAME}</a> &rsaquo; ${hub.label}</p>
   <h1>${hub.title}</h1>
@@ -117,6 +121,18 @@ const homeCards = HUBS.map(hub => {
       </div>
     </a>`;
 }).join('\n');
+
+// Flat index of every tutorial, grouped by hub — brings all articles to depth 1 from the homepage.
+const allTutorials = HUBS.map(hub => {
+  const styles = all.filter(r => r.hubPath === hub.path);
+  if (!styles.length) return '';
+  return `      <div class="tut-group">
+        <h3><a href="/${hub.path}/">${hub.label}</a></h3>
+        <ul>
+${styles.map(r => `          <li><a href="/${hub.path}/${r.slug}/">${r.title}</a></li>`).join('\n')}
+        </ul>
+      </div>`;
+}).filter(Boolean).join('\n');
 
 const homeHtml = `<!DOCTYPE html>
 <html lang="en">
@@ -157,9 +173,20 @@ const homeHtml = `<!DOCTYPE html>
   .hub-card h3{font-family:Inter,sans-serif;margin:0 0 0.3rem;}
   .hub-card .subtitle{font-family:Inter,sans-serif;font-size:0.78rem;color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:0.3px;}
   .hub-card .summary{font-size:0.9rem;color:var(--muted);margin:0.4rem 0 0;line-height:1.5;}
-</style>
+  .all-tutorials{margin-top:3rem;}
+  .all-tutorials h2{font-family:Inter,sans-serif;font-size:1.5rem;}
+  .tut-cols{columns:2;column-gap:2rem;}
+  @media (max-width:640px){.tut-cols{columns:1;}}
+  .tut-group{break-inside:avoid;margin-bottom:1.2rem;}
+  .tut-group h3{font-family:Inter,sans-serif;font-size:1rem;margin:0 0 0.3rem;}
+  .tut-group h3 a{color:var(--text);text-decoration:none;}
+  .tut-group ul{margin:0;padding-left:1.1rem;}
+  .tut-group li{font-size:0.9rem;line-height:1.6;}
+  .tut-group a{color:var(--accent);text-decoration:none;}
+${HUB_NAV_CSS}</style>
 </head>
 <body>
+${HUB_NAV}
 <div class="wrap">
   <h1>${SITE_NAME} — Hairstyle Tutorials That Actually Explain the Technique</h1>
   <p class="intro">Step-by-step hairstyle tutorials — braids, curly hair, short hair, natural hair, updos, ponytails, wedding hair, kids hair and more. Real technique explanations, not just inspiration photos.</p>
@@ -167,6 +194,13 @@ const homeHtml = `<!DOCTYPE html>
   <div class="hub-grid">
 ${homeCards}
   </div>
+
+  <section class="all-tutorials">
+    <h2>All ${all.length} Tutorials</h2>
+    <div class="tut-cols">
+${allTutorials}
+    </div>
+  </section>
 </div>
 <footer style="max-width:960px;margin:0 auto;padding:24px 1.5rem;text-align:center;">
   <p style="font-size:.72rem;color:#7a6a72;">${SITE_NAME} is part of Gesmine-Invest Limited, registered UK company number 14120136, registered office address at Hardy House, 269 Poynders Gardens, London, London, United Kingdom, SW4 8PQ.</p>
